@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/jquery-3.3.1.js" charset="utf-8"></script>
+    <script src="js/scripts.js" charset="utf-8"></script>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div class="container-margin">
+      <div class="header">
+        <h1>The Pizza Place</h1>
+        <h2>The interactive world of Pizza.</h2>
+      </div>
+      <fieldset class="center col-md-6" id="name-block">
+        <form class="name-form">
+          <div class="form-group">
+            <label for="customer">Enter your name</label>
+            <input type="text" class="form-control" name="customer" id="customer" placeholder="Name">
+          </div>
+          <button type="submit" class="btn btn-danger" id="name-submit">Submit</button>
+        </form>
+      </fieldset>
+      <div class="row">
+        <div class="col-md-8">
+            <fieldset id="ingredients-block">
+              <div class="form-group inline">
+                <label for="pizza-size">Select Size</label>
+                <select class="form-control size-select" name="pizza-size" id="pizza-size" size="4">
+                  <option>Small</option>
+                  <option>Medium</option>
+                  <option>Large</option>
+                  <option>Stupid Massive Pizza</option>
+                </select>
+              </div>
+              <div class="form-group inline block">
+                <label for="pizza-topping">Choose your toppings.</label>
+                <select multiple class="form-control" name="pizza-topping" id="pizza-topping">
+                  <option><span class="order-text">Sliced Pepperoni</span></option>
+                  <option><span class="order-text">Pre-Cooked Bacon Pieces</span></option>
+                  <option><span class="order-text">Cooked Beef Topping</span></option>
+                  <option><span class="order-text">Cooked Italian Sausage</span></option>
+                  <option><span class="order-text">Sliced Turkey Breast</span></option>
+                  <option><span class="order-text">Sliced Hard Salami</span></option>
+                  <option><span class="order-text">Ham</span></option>
+                  <option><span class="order-text">Red Peppers</span></option>
+                  <option><span class="order-text">Green Peppers</span></option>
+                  <option><span class="order-text">Olives</span></option>
+                  <option><span class="order-text">Pineapple</span></option>
+                  <option><span class="order-text">Mushrooms</span></option>
+                </select>
+              </div>
+              <div class="form-group inline">
+                <label for="pizza-cheese">Choose one more more styles of cheese for your Pizza</label>
+                <select multiple class="form-control" name="pizza-cheese" id="pizza-cheese">
+                  <option><span class="order-text">Four Cheese Mix</span></option>
+                  <option><span class="order-text">Mozzarella Cheese</span></option>
+                  <option><span class="order-text">Asiago</span></option>
+                  <option><span class="order-text">Traditional Feta</span></option>
+                  <option><span class="order-text">Parmesan Cheese</span></option>
+                </select>
+              </div>
+              <div class="form-group inline">
+                <label for="pizza-salad">Would you like to add a Salad or another Dessert?</label>
+                <select multiple class="form-control" name="pizza-salad" id="pizza-salad">
+                  <option><span class="order-text">Mixed Vegetable Salad</span></option>
+                  <option><span class="order-text">Spring Leaf Salad</span></option>
+                  <option><span class="order-text">Meat Salad: Meat Sweats Edition</span></option>
+                  <option><span class="order-text">Bag of Cookies</span></option>
+                  <option><span class="order-text">Brownie</span></option>
+                  <option><span class="order-text">Garlic knot bread</span></option>
+                </select>
+              </div>
+              <div class="form-group inline">
+                <label for="pizza-dressings">Choose Dressings & Dipping sauces</label>
+                <select multiple class="form-control" name="pizza-dressings" id="pizza-dressing">
+                  <option><span class="order-text">Ranch Dressing</span></option>
+                  <option><span class="order-text">Balsamic Vinegar and Oil Dressing</span></option>
+                  <option><span class="order-text">Bleu Cheese Dressing</span></option>
+                  <option><span class="order-text">Marinara Dipping Sauce</span></option>
+                  <option><span class="order-text">Smoked BBQ Dipping Sauce</span></option>
+                  <option><span class="order-text">Mustard Dipping Sauce</span></option>
+                </select>
+              </div>
+              <br>
+              <button type="submit" class="btn btn-danger" id="ingredients-back">Back</button>
+              <button type="submit" class="btn btn-danger" id="ingredients-submit">Add</button>
+            </fieldset>
+        </div>
+
+        <div class="col-md-4">
+          <fieldset id="result-block">
+            <h2>Your order:</h2>
+            <div id="total-form">
+
+            </div>
+            <button type="submit" class="btn btn-danger" id="order-submit">Checkout</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
