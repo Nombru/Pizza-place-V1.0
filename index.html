@@ -23,6 +23,9 @@
           <button type="submit" class="btn btn-danger" id="name-submit">Submit</button>
         </form>
       </fieldset>
+      <div class="instructions">
+        <p>Hold down the Command Key to select mutiple options across the various fields available to you pizza needs.</p>
+      </div>
       <div class="row">
         <div class="col-md-8">
             <fieldset id="ingredients-block">
@@ -35,6 +38,7 @@
                   <option>Stupid Massive Pizza</option>
                 </select>
               </div>
+<!-- Toppings Section               -->
               <div class="form-group inline block">
                 <label for="pizza-topping">Choose your toppings.</label>
                 <select multiple class="form-control" name="pizza-topping" id="pizza-topping">
@@ -52,6 +56,7 @@
                   <option><span class="order-text">Mushrooms</span></option>
                 </select>
               </div>
+<!-- Cheese Section -->
               <div class="form-group inline">
                 <label for="pizza-cheese">Choose one more more styles of cheese for your Pizza</label>
                 <select multiple class="form-control" name="pizza-cheese" id="pizza-cheese">
@@ -62,8 +67,9 @@
                   <option><span class="order-text">Parmesan Cheese</span></option>
                 </select>
               </div>
+<!-- Sides Section -->
               <div class="form-group inline">
-                <label for="pizza-salad">Would you like to add a Salad or another Dessert?</label>
+                <label for="pizza-salad">Would you like to add a Salad or a dessert?</label>
                 <select multiple class="form-control" name="pizza-salad" id="pizza-salad">
                   <option><span class="order-text">Mixed Vegetable Salad</span></option>
                   <option><span class="order-text">Spring Leaf Salad</span></option>
@@ -71,17 +77,6 @@
                   <option><span class="order-text">Bag of Cookies</span></option>
                   <option><span class="order-text">Brownie</span></option>
                   <option><span class="order-text">Garlic knot bread</span></option>
-                </select>
-              </div>
-              <div class="form-group inline">
-                <label for="pizza-dressings">Choose Dressings & Dipping sauces</label>
-                <select multiple class="form-control" name="pizza-dressings" id="pizza-dressing">
-                  <option><span class="order-text">Ranch Dressing</span></option>
-                  <option><span class="order-text">Balsamic Vinegar and Oil Dressing</span></option>
-                  <option><span class="order-text">Bleu Cheese Dressing</span></option>
-                  <option><span class="order-text">Marinara Dipping Sauce</span></option>
-                  <option><span class="order-text">Smoked BBQ Dipping Sauce</span></option>
-                  <option><span class="order-text">Mustard Dipping Sauce</span></option>
                 </select>
               </div>
               <br>
